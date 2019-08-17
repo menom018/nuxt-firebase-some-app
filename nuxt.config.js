@@ -1,7 +1,6 @@
-import NuxtConfiguration from '@nuxt/config'
 const colors = require('vuetify/es5/util/colors').default
 
-const config: NuxtConfiguration = {
+module.exports = {
   mode: 'spa',
   /*
    ** Headers of the page
@@ -80,8 +79,6 @@ const config: NuxtConfiguration = {
     /*
      ** You can extend webpack config here
      */
-    // extend(config, ctx) {}
+    extend(config, ctx) {}
   }
 }
-
-export default config
